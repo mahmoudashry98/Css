@@ -31,7 +31,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
 ```bash
-[git clone https://github.com/mahmoudashry98/learning-HTML-CSS.git](https://github.com/mahmoudashry98/Css.git)https://github.com/mahmoudashry98/Css.git
+git clone https://github.com/mahmoudashry98/Css.git
 
 
 
