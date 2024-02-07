@@ -13,7 +13,7 @@ body {
   border: 4px solid #000000;
   padding: 20px;
   border-radius: 3px;
-  width: 600px;
+  width: 770px;
   margin: 20px auto 0;
 }
 
@@ -33,19 +33,21 @@ body {
 
 .course-title {
   text-align: center;
-  font-size: 22px;
-  color: #ffffff;
-  background-color: #0043ff;
+  font-size: 26px;
+  font-weight: bold;
+  color: #0043ff;
+  /* background-color: #0043ff; */
   text-transform: uppercase;
   padding: 10px 0;
   margin-top: 0;
-  border-radius: 3px;
-  margin-bottom: 20px;
 }
-
-.course-img {
-  border-radius: 3px;
+/*container-course-title */
+.container-course-title {
+  border-style: solid;
+  border-color: #0043ff;
+  border-radius: 5px;
   margin-bottom: 20px;
+  border-width: thin;
 }
 
 .course-price {
@@ -72,6 +74,7 @@ body {
 }
 
 .course-roadMap-title {
+  font-weight: bold;
   margin: 20px 0 5px;
   text-transform: capitalize;
 }
@@ -110,7 +113,12 @@ body {
   margin: 0 0 20px 20px;
 }
 
+.course-content {
+  float: inline-start;
+}
+
 .course-button {
+  width: 100%;
   background-color: #0043ff;
   border: none;
   color: #ffffff;
@@ -120,8 +128,37 @@ body {
   cursor: pointer;
   border-radius: 3px;
   transition: background 0.3s;
+  margin-top: 20px;
 }
 
 .course-button:hover {
   background-color: #4777ff;
+}
+
+/*float Layout*/
+
+.course-float {
+  width: 240px;
+  float: left;
+  /* margin-right: 20px;   */
+}
+
+.course-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.course-float:first-child {
+  padding-right: 30px;
+}
+
+.course-img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
